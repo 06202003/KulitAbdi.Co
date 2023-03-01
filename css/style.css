@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
+  scrollbar-width: thin;
+  scrollbar-color: blue #b29050;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #b29050;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #6f4628;
+  border-radius: 20px;
+  border: 3px solid #b29050;
+}
+
+body {
+  background-image: url('../img/bg.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 600px;
+}
+.logo {
+  width: 35px;
+  height: auto;
+  max-width: 35px;
+  max-height: 100px;
+}
+
+.bgHero {
+  height: 100vh;
+  width: 100%;
+}
+.card-button {
+  border: 1px solid #252525;
+  display: flex;
+  padding: 0.3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+.card {
+  width: 250px;
+  height: 350px;
+  padding: 0.8em;
+  background: #f5f5f5;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-img {
+  background-color: #ffcaa6;
+  height: 40%;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.card-info {
+  padding-top: 10%;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+.tigad {
+  width: 225px;
+  height: 150px;
+}
+.dalamcarousel {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.tipsindex {
+  width: 100%;
+  height: auto;
+  max-width: 425px;
+  max-height: 212.5px;
+  text-align: center;
+  margin-top: 3rem;
+}
+.card-footer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+/*Hover*/
+.card-img:hover {
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+  border: 1px solid #ffcaa6;
+  background-color: #b29050;
+}
+
+.bgnav {
+  background-color: rgb(97, 51, 18, 0.9);
+}
+.tinggi-cont {
+  height: 100vh;
+}
+.judulbesar {
+  font-size: 3.5em;
+}
+.judulsedang {
+  font-size: 2.25em;
+}
+.judulkecil {
+  font-size: 1em;
+}
+
+.nav-link,
+.nav-link:visited {
+  font-size: 1.2em;
+  color: white !important;
+}
+
+.nav-link:hover {
+  font-size: 1.2em;
+  color: white !important;
+}
+
+.nav-link::after {
+  display: block;
+  content: '';
+  border-bottom: 2px solid #f7d32c;
+  transform: scaleX(0);
+  transition: transform 500ms cubic-bezier(1, 0.19, 0, 0.86);
+  transform-origin: left;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+.link-border {
+  font-size: 1.3em !important;
+}
+
+.btn-outline-primary {
+  border-color: #b29050 !important;
+  color: white !important;
+}
+.btn-outline-primary:hover {
+  background-color: #b29050 !important;
+  color: black !important;
+}
+.Explore {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* 2 */
+.ting {
+  height: auto;
+  padding-bottom: 3rem;
+  background-color: whitesmoke;
+}
+
+.gambarlogo {
+  height: auto;
+  width: 100%;
+  max-width: 200px;
+  max-height: 400px;
+}
+/* 2 */
+
+/* foot */
+
+.link-secondary {
+  text-decoration: none;
+}
+.logofoot {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 2rem auto 2rem;
+  display: block;
+}
+.footketkiri {
+  margin-left: 2.5rem;
+}
+.footketkiri2 {
+  margin-left: 0rem;
+}
+.footketkiri3 {
+  margin-left: 0rem;
+}
+.tekskiri {
+  text-align: left;
+}
+/* Button Login */
+.btnlog {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: whitesmoke;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #b29050;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #b29050;
+}
+
+.btnlog:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #b29050;
+}
+
+.btnlog:active {
+  transform: scale(0.9);
+}
+/* End Button Login */
+
+.spctxt {
+  line-height: 2rem;
+}
+
+/* Testimoni */
+.client {
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+.carousel-icon i {
+  font-size: 5rem;
+}
+
+.carousel-item i {
+  font-size: 1.6rem;
+  color: black;
+}
+
+.t-card {
+  padding: 1.8125rem 1.125rem;
+  background-color: #b27f5399;
+  border-radius: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+  height: auto;
+}
+.carousel .carousel-item {
+  transition-duration: 2s;
+}
+/* Testimoni */
+
+/* foot */
+@media only screen and (min-width: 319px) and (max-width: 767px) {
+  .logo {
+    width: 100%;
+    height: auto;
+    max-width: 50px;
+    max-height: 100px;
+  }
+  .judulbesar {
+    font-size: 2.5em;
+  }
+  .judulsedang {
+    font-size: 1.5em;
+  }
+  .judulkecil {
+    font-size: 0.7em;
+  }
+  .navigasi {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .logofoot {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0rem auto 0rem;
+    display: block;
+  }
+  .footketkiri {
+    margin-left: 0rem;
+  }
+  .footketkiri2 {
+    margin-left: 2.5rem;
+  }
+  .footketkiri3 {
+    margin-left: 2.5rem;
+  }
+  .tekskiri {
+    text-align: left;
+    margin-left: 2rem;
+  }
+  .tigad {
+    width: 325px;
+    height: 240px;
+  }
+}
