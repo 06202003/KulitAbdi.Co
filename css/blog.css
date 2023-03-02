@@ -155,8 +155,15 @@ body {
 .foto1 {
   width: 100%;
   height: auto;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 350px;
+  max-height: 500px;
+  margin-bottom: 1rem;
+}
+.foto12 {
+  width: 100%;
+  height: auto;
+  max-width: 275px;
+  max-height: 175px;
   margin-bottom: 1rem;
 }
 .foto {
@@ -183,6 +190,12 @@ body {
   max-width: 750px;
   max-height: 650px;
 }
+.fotodalamdalamlagi {
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  max-height: 650px;
+}
 .fotodalama {
   width: 150px;
   height: 200px;
@@ -199,6 +212,18 @@ body {
   max-height: 500px;
   margin: 2rem auto 2rem;
   display: block;
+}
+.footketkiri {
+  margin-left: 2.5rem;
+}
+.footketkiri2 {
+  margin-left: 0rem;
+}
+.footketkiri3 {
+  margin-left: 0rem;
+}
+.tekskiri {
+  text-align: left;
 }
 /* foot */
 @media only screen and (min-width: 319px) and (max-width: 767px) {

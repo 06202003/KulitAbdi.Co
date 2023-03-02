@@ -208,6 +208,18 @@ body {
   margin: 2rem auto 2rem;
   display: block;
 }
+.footketkiri {
+  margin-left: 2.5rem;
+}
+.footketkiri2 {
+  margin-left: 0rem;
+}
+.footketkiri3 {
+  margin-left: 0rem;
+}
+.tekskiri {
+  text-align: left;
+}
 
 /* foot */
 
