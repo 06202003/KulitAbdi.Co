@@ -211,6 +211,10 @@ body {
 
 /* foot */
 
+.btn-warning {
+  background-color: #b29050 !important;
+}
+
 @media only screen and (min-width: 319px) and (max-width: 767px) {
   .logo {
     width: 100%;

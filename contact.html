@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet" />
     <!-- BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/contact.css" />
     <!-- Icon -->
@@ -133,20 +135,14 @@
                   <textarea class="form-control contact-textarea" id="massages1" rows="5" name="message" required></textarea>
                 </div>
                 <button type="submit" class="btn my-1 btn-warning w-100 mt-3 mb-5" style="height: 3rem" id="contact-button">Send</button>
+                <script>
+                  const form1 = document.getElementById('myForm');
+                  $('#myForm').on('submit', function (e) {
+                    e.preventDefault();
+                    $('#contact-thx').modal('show');
+                  });
+                </script>
               </form>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="color: black; text-align: center; background-color: rgb(230, 206, 69); border-radius: 30px">
-              <div class="modal-body">
-                <img src="images/thanks.gif" class="w-50" style="margin: 0 auto; margin-bottom: 1rem" />
-                <h5>Your message has been received by the system and we will reply shortly.</h5>
-                <div class="text-end pe-2 pb-2">
-                  <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -251,7 +247,23 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="contact-thx" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h4 class="contact-modal-h4">Your message has been received by the system and we will reply to it shortly.</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning btn-lg w-100" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
     <script src="script/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </body>
 </html>
