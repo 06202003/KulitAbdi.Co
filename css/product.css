@@ -220,6 +220,11 @@ svg {
   text-align: left;
 }
 /* foot */
+
+.judulproduk {
+  margin-top: 0;
+}
+
 @media only screen and (min-width: 319px) and (max-width: 767px) {
   .logo {
     width: 100%;
@@ -276,5 +281,8 @@ svg {
   .tekskiri {
     text-align: left;
     margin-left: 2rem;
+  }
+  .judulproduk {
+    margin-top: 1rem;
   }
 }
