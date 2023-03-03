@@ -224,6 +224,10 @@ svg {
 .judulproduk {
   margin-top: 0;
 }
+.logo {
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
 .navbar-toggler {
   border-color: white !important;
 }
@@ -236,6 +240,10 @@ svg {
     height: auto;
     max-width: 50px;
     max-height: 100px;
+  }
+  .logo {
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
   .judulbesar {
     font-size: 2.5em;
