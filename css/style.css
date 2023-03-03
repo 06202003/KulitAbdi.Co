@@ -169,7 +169,20 @@ svg {
   display: table-cell;
   vertical-align: middle;
 }
-
+.text-title {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-top: 0.5em;
+}
+.text-body {
+  font-size: 0.75em;
+}
+.text-promo {
+  font-size: 1em;
+}
+.text-asli {
+  font-size: 1em;
+}
 /* 2 */
 .ting {
   height: auto;
@@ -278,6 +291,12 @@ svg {
   height: 250px;
   border-radius: 1rem;
 }
+.ahay {
+  margin-top: 0rem;
+}
+.tengaheuy {
+  text-align: left;
+}
 
 /* foot */
 @media only screen and (min-width: 319px) and (max-width: 767px) {
@@ -326,13 +345,75 @@ svg {
     height: 150px;
   }
   .promosigambar {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 500px;
     border-radius: 1rem;
     margin-bottom: 2rem;
+    position: relative;
+    padding: 0.5rem;
+    border-radius: 1rem;
   }
   .dalamcarousel {
     padding-left: 0rem;
     padding-right: 0rem;
+  }
+  .ahay {
+    margin-top: 5;
+  }
+  .tengaheuy {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .promosigambar {
+    width: 350px;
+    height: 225px;
+    border-radius: 1rem;
+  }
+  .dalamcarousel {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .card {
+    width: 230px;
+    height: 350px;
+    padding: 0.8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  .tigad {
+    width: 205px;
+    height: 150px;
+  }
+  .text-body {
+    font-size: 0.7em;
+  }
+  .text-promo {
+    font-size: 0.85em;
+  }
+  .logofoot {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0rem auto 0rem;
+    display: block;
+  }
+  .footketkiri {
+    margin-left: 0rem;
+  }
+  .footketkiri2 {
+    margin-left: 2.5rem;
+  }
+  .footketkiri3 {
+    margin-left: 2.5rem;
+  }
+  .tekskiri {
+    text-align: left;
+    margin-left: 2rem;
   }
 }
