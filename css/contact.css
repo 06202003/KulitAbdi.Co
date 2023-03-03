@@ -55,7 +55,9 @@ body {
   font-size: 1.2em;
   color: white !important;
 }
-
+.bg-foot {
+  background-color: gray;
+}
 .nav-link::after {
   display: block;
   content: '';
@@ -119,20 +121,6 @@ body {
 }
 
 /* 2 */
-.card {
-  width: 275px;
-  height: 400px;
-  background: white;
-  padding: 0.4em;
-  border-radius: 6px;
-}
-
-.card-image {
-  background-color: rgb(236, 236, 236);
-  width: 100%;
-  height: 70%;
-  border-radius: 6px 6px 0 0;
-}
 
 .card-image-inside {
   background-color: rgb(236, 236, 236);
@@ -141,51 +129,121 @@ body {
   border-radius: 10px;
 }
 
-.card-image:hover {
-  transform: scale(0.98);
+.card {
+  width: 300px;
+  height: 450px;
+  background: rgb(38, 38, 38);
+  box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.333);
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
 }
 
-.category {
-  text-transform: uppercase;
-  font-size: 0.7em;
-  font-weight: 600;
-  color: rgb(63, 121, 230);
+.imge {
+  height: 100px;
+  background-color: #402814;
 }
 
-.category:hover {
-  cursor: pointer;
+.imge .Usericon {
+  transform: translateX(10px) translateY(10px);
+  width: 1px;
+  height: 80px;
+  border-radius: 10px;
 }
 
-.nama {
-  font-size: 1.15em;
+.imge .UserName {
+  width: auto;
+  height: 15px;
+  color: #262626;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translateX(30px) translateY(-55px);
+  color: white;
+  margin-bottom: 1.5rem;
 }
 
-.heading {
-  color: rgb(88, 87, 87);
-  padding-left: 7px;
-  padding-right: 7px;
+.imge .Id {
+  width: auto;
+  height: 15px;
+  color: #262626;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translateX(30px) translateY(-55px);
+  color: white;
 }
 
-.heading:hover {
-  cursor: pointer;
+.Description {
+  border-color: #141414;
+  background-color: #414141;
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
 }
 
-.author {
-  color: gray;
-  font-weight: 400;
-  font-size: 14px;
-  padding-top: 10px;
+/*______Social Media______*/
+.social-media:before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  transform: translatey(10px);
+  background: #414141;
 }
 
-.name {
-  font-weight: 600;
+.social-media a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
 }
-.found {
-  font-size: 1em;
+
+.social-media a:last-child {
+  margin-right: 0;
 }
-.name:hover {
-  cursor: pointer;
+
+.social-media a svg {
+  color: #ff5858;
+  margin-top: 2rem;
+  width: 20px;
+  fill: currentColor;
 }
+
+.circles {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.backg {
+  background-color: wheat;
+}
+
+.circles {
+  width: 20%;
+  gap: 5px;
+  padding: 10px;
+}
+
+.c {
+  width: 09px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 5px rgba(235, 235, 235, 0.356);
+}
+
+.c:first-child {
+  background-color: red;
+}
+
+.c:nth-child(2) {
+  background-color: rgb(204, 167, 4);
+}
+
+.c:last-child {
+  background-color: green;
+}
+
 .bg-contact {
   background-color: whitesmoke;
   height: 100vh;
@@ -263,35 +321,117 @@ body {
     padding-left: 0rem;
     padding-right: 0rem;
   }
+
   .card {
-    width: 275px;
-    height: 350px;
-    background: white;
-    padding: 0.4em;
-    border-radius: 6px;
-    margin-bottom: 1em;
+    width: 250px;
+    height: 300px;
+    background: rgb(38, 38, 38);
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.333);
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
   }
-  .card-image {
-    background-color: white;
+
+  .card-image-inside {
+    background-color: rgb(236, 236, 236);
     width: 100%;
-    height: 50%;
+    height: 100%;
     border-radius: 10px;
   }
-  .card-image-inside {
-    background-color: white;
 
-    border-radius: 6px 6px 0 0;
+  .imge {
+    height: 80px;
+    background-color: #402814;
+  }
+
+  .imge .Usericon {
+    transform: translateX(10px) translateY(10px);
+    width: 1px;
+    height: 80px;
+    border-radius: 10px;
+  }
+
+  .imge .UserName {
+    width: auto;
+    height: 15px;
+    color: #262626;
+    font-size: 15px;
+    font-weight: bold;
+    transform: translateX(15px) translateY(-65px);
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+
+  .imge .Id {
+    width: auto;
+    height: 15px;
+    color: #262626;
+    font-size: 15px;
+    font-weight: bold;
+    transform: translateX(15px) translateY(-65px);
+    color: white;
+  }
+
+  .Description {
+    border-color: #141414;
+    background-color: #414141;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+  }
+
+  /*______Social Media______*/
+  .social-media:before {
+    content: ' ';
+    display: block;
     width: 100%;
-    height: auto;
-    max-height: 300px;
-    max-width: 300px;
+    height: 2px;
+    transform: translatey(10px);
+    background: #414141;
   }
-  .nama {
-    font-size: 0.85em;
+
+  .social-media a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: inherit;
   }
-  .found {
-    font-size: 0.75em;
+
+  .social-media a:last-child {
+    margin-right: 0;
   }
+
+  .social-media a svg {
+    color: #ff5858;
+    margin-top: 2rem;
+    width: 20px;
+    fill: currentColor;
+  }
+
+  .circles {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .backg {
+    background-color: wheat;
+  }
+
+  .circles {
+    width: 30%;
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .c {
+    width: 09px;
+    height: 9px;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 5px rgba(235, 235, 235, 0.356);
+  }
+
   .textketerangan {
     font-size: 0.65em;
   }
@@ -327,15 +467,7 @@ body {
     padding-left: 5rem;
     padding-right: 5rem;
   }
-  .card {
-    width: 230px;
-    height: 350px;
-    padding: 0.8em;
-    background: #f5f5f5;
-    position: relative;
-    overflow: visible;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  }
+
   .tigad {
     width: 205px;
     height: 150px;
@@ -366,5 +498,114 @@ body {
   .tekskiri {
     text-align: left;
     margin-left: 2rem;
+  }
+  .card {
+    width: 250px;
+    height: 400px;
+    background: rgb(38, 38, 38);
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.333);
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .card-image-inside {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .imge {
+    height: 80px;
+    background-color: #402814;
+  }
+
+  .imge .Usericon {
+    transform: translateX(10px) translateY(10px);
+    width: 1px;
+    height: 80px;
+    border-radius: 10px;
+  }
+
+  .imge .UserName {
+    width: auto;
+    height: 15px;
+    color: #262626;
+    font-size: 15px;
+    font-weight: bold;
+    transform: translateX(15px) translateY(-65px);
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+
+  .imge .Id {
+    width: auto;
+    height: 15px;
+    color: #262626;
+    font-size: 15px;
+    font-weight: bold;
+    transform: translateX(15px) translateY(-65px);
+    color: white;
+  }
+
+  .Description {
+    border-color: #141414;
+    background-color: #414141;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+  }
+
+  /*______Social Media______*/
+  .social-media:before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    transform: translatey(10px);
+    background: #414141;
+  }
+
+  .social-media a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .social-media a:last-child {
+    margin-right: 0;
+  }
+
+  .social-media a svg {
+    color: #ff5858;
+    margin-top: 2rem;
+    width: 20px;
+    fill: currentColor;
+  }
+
+  .circles {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .backg {
+    background-color: wheat;
+  }
+
+  .circles {
+    width: 30%;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .c {
+    width: 09px;
+    height: 9px;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 5px rgba(235, 235, 235, 0.356);
   }
 }
