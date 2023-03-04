@@ -6,8 +6,9 @@ var teksnav2 = document.getElementById('tekshaha2');
 var teksnav3 = document.getElementById('tekshaha3');
 var teksnav4 = document.getElementById('tekshaha4');
 var teksnav10 = document.getElementById('tekshaha10');
+
 window.addEventListener('scroll', function () {
-  if (window.pageYOffset > 100) {
+  if (window.pageYOffset > 10) {
     nav.classList.add('bgnav', 'shadow');
     teksnav.style.color = 'white';
     teksnav1.style.color = 'white';
