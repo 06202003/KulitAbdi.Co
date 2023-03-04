@@ -1,207 +1,537 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Comfortaa', cursive;
-    scrollbar-width: thin;
-    scrollbar-color: rgb(211, 211, 217) #030303;
-  }
-  
-  *::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  *::-webkit-scrollbar-track {
-    /* background: #b29050; */
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color: #6f4628;
-    border-radius: 5px;
-    /* border: 3px solid #b29050; */
-  }
-  
-  body {
-    /* background-image: url('../img//bg-kulit.png'); */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    /* min-height: 600px; */
-  }
-  
-  /* Button */
-  .cta {
-    display: flex;
-    padding: 11px 33px;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-    color: #FFFFFF;
-    background: #6F4628;
-    transition: 1s;
-    box-shadow: 6px 6px 0 black;
-    transform: skewX(-15deg);
-    border: none;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-  
-  .cta:focus {
-    outline: none;
-  }
-  
-  .cta:hover {
-    transition: 0.5s;
-    box-shadow: 10px 10px 0 #B28053;
-  }
-  
-  .cta .second {
-    transition: 0.5s;
-    margin-right: 0px;
-  }
-  
-  .cta:hover  .second {
-    transition: 0.5s;
-    margin-right: 45px;
-  }
-  
-  .span {
-    transform: skewX(15deg)
-  }
-  
-  .second {
-    width: 20px;
-    margin-left: 30px;
-    position: relative;
-    top: 12%;
-  }
-  
-  .one {
-    transition: 0.4s;
-    transform: translateX(-60%);
-  }
-  
-  .two {
-    transition: 0.5s;
-    transform: translateX(-30%);
-  }
-  
-  .cta:hover .three {
-    animation: color_anim 1s infinite 0.2s;
-  }
-  
-  .cta:hover .one {
-    transform: translateX(0%);
-    animation: color_anim 1s infinite 0.6s;
-  }
-  
-  .cta:hover .two {
-    transform: translateX(0%);
-    animation: color_anim 1s infinite 0.4s;
-  }
-  
-  @keyframes color_anim {
-    0% {
-      fill: #FFFFFF;
-    }
-  
-    50% {
-      fill: #B28053;
-    }
-  
-    100% {
-      fill: #FFFFFF;
-    }
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(211, 211, 217) #030303;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+body {
+  /* background-image: url('../img//bg-kulit.png'); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  /* min-height: 600px; */
+}
+
+.gambar-jelajah {
+  width: 100%;
+  height: 300px;
+}
+
+/* Button */
+.cta {
+  display: flex;
+  padding: 11px 33px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  background: #6f4628;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+  border: none;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #b28053;
+}
+
+.cta .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover .second {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.span {
+  transform: skewX(15deg);
+}
+
+.second {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: #ffffff;
   }
 
+  50% {
+    fill: #b28053;
+  }
 
-  /* end button */
+  100% {
+    fill: #ffffff;
+  }
+}
 
-  .navbar-toggler:focus {
-    border: 0 !important;
-    box-shadow: none !important;
+/* end button */
+
+.navbar-toggler:focus {
+  border: 0 !important;
+  box-shadow: none !important;
 }
 
 .navbar-toggler {
-    border: 0 !important;
+  border: 0 !important;
 }
 
-  
-  /* Navbar */
-  .BtnAnm {
-    font-size: 17px;
-    background: transparent;
-    border: none;
-    padding: 1em 1.5em;
-    color: black;
-    text-transform: uppercase;
-    position: relative;
-    transition: .5s ease;
-  }
-  
-  .BtnAnm::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background-color: #6F4628;
-    transition: .5s ease;
-  }
-  
-  .BtnAnm:hover {
-    color: white;
-    transition-delay: .5s;
-  }
-  
-  .BtnAnm:hover::before {
-    width: 100%;
-  }
-  
-  .BtnAnm::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 0;
-    width: 100%;
-    background-color: #6F4628;
-    transition: .4s ease;
-    z-index: -1;
-  }
-  
-  .BtnAnm:hover::after {
-    height: 100%;
-    transition-delay: 0.4s;
-    color: aliceblue;
-  }
+/* Navbar */
+.BtnAnm {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: black;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+}
 
-  .navi{
-    background-color: #F6F8FA;
-  }
-  /* End Navbar */
+.BtnAnm::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #6f4628;
+  transition: 0.5s ease;
+}
+
+.BtnAnm:hover {
+  color: white;
+  transition-delay: 0.5s;
+}
+
+.BtnAnm:hover::before {
+  width: 100%;
+}
+
+.BtnAnm::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #6f4628;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.BtnAnm:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+.navi {
+  background-color: #f6f8fa;
+}
+/* End Navbar */
+.logo {
+  width: 35px;
+  height: auto;
+  max-width: 35px;
+  max-height: 100px;
+}
+
+.card-button {
+  border: 1px solid #252525;
+  display: flex;
+  padding: 0.3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+.card {
+  width: 250px;
+  height: 350px;
+  padding: 0.8em;
+  background: #f5f5f5;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-img {
+  background-color: #ffcaa6;
+  height: 40%;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.card-info {
+  padding-top: 10%;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+.tigad {
+  width: 225px;
+  height: 150px;
+}
+.dalamcarousel {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.tipsindex {
+  width: 100%;
+  height: auto;
+  max-width: 425px;
+  max-height: 212.5px;
+  text-align: center;
+  margin-top: 3rem;
+}
+.card-footer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+/*Hover*/
+.card-img:hover {
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+  border: 1px solid #ffcaa6;
+  background-color: #b29050;
+}
+
+.bgnav {
+  background-color: #faf8f6;
+}
+.tinggi-cont {
+  height: 100vh;
+}
+.judulbesar {
+  font-size: 3.5em;
+}
+.judulsedang {
+  font-size: 2.25em;
+}
+.judulkecil {
+  font-size: 1em;
+}
+.kanandikit {
+  margin-right: 10rem;
+}
+
+.nav-link,
+.nav-link:visited {
+  font-size: 1.2em;
+  color: black !important;
+}
+
+.nav-link:hover {
+  font-size: 1.2em;
+  color: gray !important;
+}
+
+.nav-link::after {
+  display: block;
+  content: '';
+  border-bottom: 2px solid #f7d32c;
+  transform: scaleX(0);
+  transition: transform 500ms cubic-bezier(1, 0.19, 0, 0.86);
+  transform-origin: left;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+.link-border {
+  font-size: 1.3em !important;
+}
+
+.btn-outline-primary {
+  border-color: #b29050 !important;
+  color: white !important;
+}
+.btn-outline-primary:hover {
+  background-color: #b29050 !important;
+  color: black !important;
+}
+.Explore {
+  display: table-cell;
+  vertical-align: middle;
+}
+.text-title {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-top: 0.5em;
+}
+.text-body {
+  font-size: 0.75em;
+}
+.text-promo {
+  font-size: 1em;
+}
+.text-asli {
+  font-size: 1em;
+}
+/* 2 */
+.ting {
+  height: auto;
+  padding-bottom: 3rem;
+  background-color: whitesmoke;
+}
+
+.gambarlogo {
+  height: auto;
+  width: 100%;
+  max-width: 200px;
+  max-height: 400px;
+}
+/* 2 */
+
+/* foot */
+
+.link-secondary {
+  text-decoration: none;
+}
+.logofoot {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 2rem auto 2rem;
+  display: block;
+}
+.footketkiri {
+  margin-left: 2.5rem;
+}
+.footketkiri2 {
+  margin-left: 0rem;
+}
+.footketkiri3 {
+  margin-left: 0rem;
+}
+.tekskiri {
+  text-align: left;
+}
+/* Button Login */
+.btnlog {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: whitesmoke;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #b29050;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #b29050;
+}
+
+.btnlog:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #b29050;
+}
+
+.btnlog:active {
+  transform: scale(0.9);
+}
+/* End Button Login */
+
+.spctxt {
+  line-height: 2rem;
+}
+
+/* Testimoni */
+.client {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-icon i {
+  font-size: 5rem;
+}
+
+.carousel-item i {
+  font-size: 1.6rem;
+  color: black;
+}
+
+.t-card {
+  padding: 1.8125rem 1.125rem;
+  background-color: #b27f5399;
+  border-radius: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+  height: auto;
+}
+.carousel .carousel-item {
+  transition-duration: 2s;
+}
+/* Testimoni */
+
+.promosigambar {
+  width: 400px;
+  height: 250px;
+  border-radius: 1rem;
+}
+.ahay {
+  margin-top: 0rem;
+}
+.tengaheuy {
+  text-align: center;
+}
+.logo {
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
+.navbar-toggler {
+  border-color: white !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* foot */
+@media only screen and (min-width: 319px) and (max-width: 767px) {
   .logo {
-    width: 35px;
+    width: 100%;
     height: auto;
-    max-width: 35px;
+    max-width: 50px;
     max-height: 100px;
   }
-  
-  .bgHero {
-    height: 100vh;
-    width: 100%;
+  .judulbesar {
+    font-size: 2.5em;
   }
-  .card-button {
-    border: 1px solid #252525;
-    display: flex;
-    padding: 0.3em;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: 0.3s ease-in-out;
+  .judulsedang {
+    font-size: 1.5em;
+  }
+  .judulkecil {
+    font-size: 0.7em;
+  }
+  .navigasi {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .logo {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .logofoot {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0rem auto 0rem;
+    display: block;
+  }
+  .footketkiri {
+    margin-left: 0rem;
+  }
+  .footketkiri2 {
+    margin-left: 2.5rem;
+  }
+  .footketkiri3 {
+    margin-left: 2.5rem;
+  }
+  .tekskiri {
+    text-align: left;
+    margin-left: 2rem;
+  }
+  .tigad {
+    width: 225px;
+    height: 150px;
+  }
+  .promosigambar {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  .dalamcarousel {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .ahay {
+    margin-top: 5rem;
+  }
+  .tengaheuy {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .promosigambar {
+    width: 350px;
+    height: 225px;
+    border-radius: 1rem;
+  }
+  .dalamcarousel {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   .card {
-    width: 250px;
+    width: 230px;
     height: 350px;
     padding: 0.8em;
     background: #f5f5f5;
@@ -209,378 +539,35 @@
     overflow: visible;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   }
-  
-  .card-img {
-    background-color: #ffcaa6;
-    height: 40%;
-    width: 100%;
-    border-radius: 0.5rem;
-    transition: 0.3s ease;
-  }
-  
-  .card-info {
-    padding-top: 10%;
-  }
-  
-  svg {
-    width: 20px;
-    height: 20px;
-  }
   .tigad {
-    width: 225px;
+    width: 205px;
     height: 150px;
   }
-  .dalamcarousel {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-  .tipsindex {
-    width: 100%;
-    height: auto;
-    max-width: 425px;
-    max-height: 212.5px;
-    text-align: center;
-    margin-top: 3rem;
-  }
-  .card-footer {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-    border-top: 1px solid #ddd;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    position: absolute;
-    bottom: 0;
-  }
-  /*Hover*/
-  .card-img:hover {
-    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
-  }
-  
-  .card-button:hover {
-    border: 1px solid #ffcaa6;
-    background-color: #b29050;
-  }
-  
-  .bgnav {
-    background-color: #FAF8F6;
-  }
-  .tinggi-cont {
-    height: 100vh;
-  }
-  .judulbesar {
-    font-size: 3.5em;
-  }
-  .judulsedang {
-    font-size: 2.25em;
-  }
-  .judulkecil {
-    font-size: 1em;
-  }
-  .kanandikit {
-    margin-right: 10rem;
-  }
-  
-  .nav-link,
-  .nav-link:visited {
-    font-size: 1.2em;
-    color: black !important;
-  }
-  
-  .nav-link:hover {
-    font-size: 1.2em;
-    color: gray !important;
-  }
-  
-  .nav-link::after {
-    display: block;
-    content: '';
-    border-bottom: 2px solid #f7d32c;
-    transform: scaleX(0);
-    transition: transform 500ms cubic-bezier(1, 0.19, 0, 0.86);
-    transform-origin: left;
-  }
-  
-  .nav-link:hover::after {
-    transform: scaleX(1);
-  }
-  .link-border {
-    font-size: 1.3em !important;
-  }
-  
-  .btn-outline-primary {
-    border-color: #b29050 !important;
-    color: white !important;
-  }
-  .btn-outline-primary:hover {
-    background-color: #b29050 !important;
-    color: black !important;
-  }
-  .Explore {
-    display: table-cell;
-    vertical-align: middle;
-  }
-  .text-title {
-    font-size: 1.25em;
-    font-weight: bold;
-    padding-top: 0.5em;
-  }
   .text-body {
-    font-size: 0.75em;
+    font-size: 0.7em;
   }
   .text-promo {
-    font-size: 1em;
-  }
-  .text-asli {
-    font-size: 1em;
-  }
-  /* 2 */
-  .ting {
-    height: auto;
-    padding-bottom: 3rem;
-    background-color: whitesmoke;
-  }
-  
-  .gambarlogo {
-    height: auto;
-    width: 100%;
-    max-width: 200px;
-    max-height: 400px;
-  }
-  /* 2 */
-  
-  /* foot */
-  
-  .link-secondary {
-    text-decoration: none;
+    font-size: 0.85em;
   }
   .logofoot {
     width: 100%;
     height: auto;
-    max-width: 500px;
-    max-height: 500px;
-    margin: 2rem auto 2rem;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0rem auto 0rem;
     display: block;
   }
   .footketkiri {
-    margin-left: 2.5rem;
+    margin-left: 0rem;
   }
   .footketkiri2 {
-    margin-left: 0rem;
+    margin-left: 2.5rem;
   }
   .footketkiri3 {
-    margin-left: 0rem;
+    margin-left: 2.5rem;
   }
   .tekskiri {
     text-align: left;
+    margin-left: 2rem;
   }
-  /* Button Login */
-  .btnlog {
-    position: relative;
-    display: inline-block;
-    margin: 5px;
-    padding: 5px 20px;
-    text-align: center;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: whitesmoke;
-    background: transparent;
-    cursor: pointer;
-    transition: ease-out 0.5s;
-    border: 2px solid #b29050;
-    border-radius: 10px;
-    box-shadow: inset 0 0 0 0 #b29050;
-  }
-  
-  .btnlog:hover {
-    color: white;
-    box-shadow: inset 0 -100px 0 0 #b29050;
-  }
-  
-  .btnlog:active {
-    transform: scale(0.9);
-  }
-  /* End Button Login */
-  
-  .spctxt {
-    line-height: 2rem;
-  }
-  
-  /* Testimoni */
-  .client {
-    width: 100%;
-    height: 100%;
-    background-color: whitesmoke;
-  }
-  
-  .carousel-icon i {
-    font-size: 5rem;
-  }
-  
-  .carousel-item i {
-    font-size: 1.6rem;
-    color: black;
-  }
-  
-  .t-card {
-    padding: 1.8125rem 1.125rem;
-    background-color: #b27f5399;
-    border-radius: 1.25rem;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: black;
-    height: auto;
-  }
-  .carousel .carousel-item {
-    transition-duration: 2s;
-  }
-  /* Testimoni */
-  
-  .promosigambar {
-    width: 400px;
-    height: 250px;
-    border-radius: 1rem;
-  }
-  .ahay {
-    margin-top: 0rem;
-  }
-  .tengaheuy {
-    text-align: center;
-  }
-  .logo {
-    margin-left: 3rem;
-    margin-right: 2rem;
-  }
-  .navbar-toggler {
-    border-color: white !important;
-  }
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-  /* foot */
-  @media only screen and (min-width: 319px) and (max-width: 767px) {
-    .logo {
-      width: 100%;
-      height: auto;
-      max-width: 50px;
-      max-height: 100px;
-    }
-    .judulbesar {
-      font-size: 2.5em;
-    }
-    .judulsedang {
-      font-size: 1.5em;
-    }
-    .judulkecil {
-      font-size: 0.7em;
-    }
-    .navigasi {
-      padding-left: 0rem;
-      padding-right: 0rem;
-    }
-    .logo {
-      margin-left: 0rem;
-      margin-right: 0rem;
-    }
-    .logofoot {
-      width: 100%;
-      height: auto;
-      max-width: 150px;
-      max-height: 150px;
-      margin: 0rem auto 0rem;
-      display: block;
-    }
-    .footketkiri {
-      margin-left: 0rem;
-    }
-    .footketkiri2 {
-      margin-left: 2.5rem;
-    }
-    .footketkiri3 {
-      margin-left: 2.5rem;
-    }
-    .tekskiri {
-      text-align: left;
-      margin-left: 2rem;
-    }
-    .tigad {
-      width: 225px;
-      height: 150px;
-    }
-    .promosigambar {
-      width: 100%;
-      height: auto;
-      max-width: 300px;
-      max-height: 500px;
-      border-radius: 1rem;
-      margin-bottom: 2rem;
-      position: relative;
-      padding: 0.5rem;
-      border-radius: 1rem;
-    }
-    .dalamcarousel {
-      padding-left: 0rem;
-      padding-right: 0rem;
-    }
-    .ahay {
-      margin-top: 5rem;
-    }
-    .tengaheuy {
-      text-align: center;
-    }
-  }
-  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-    .promosigambar {
-      width: 350px;
-      height: 225px;
-      border-radius: 1rem;
-    }
-    .dalamcarousel {
-      padding-left: 5rem;
-      padding-right: 5rem;
-    }
-    .card {
-      width: 230px;
-      height: 350px;
-      padding: 0.8em;
-      background: #f5f5f5;
-      position: relative;
-      overflow: visible;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    }
-    .tigad {
-      width: 205px;
-      height: 150px;
-    }
-    .text-body {
-      font-size: 0.7em;
-    }
-    .text-promo {
-      font-size: 0.85em;
-    }
-    .logofoot {
-      width: 100%;
-      height: auto;
-      max-width: 150px;
-      max-height: 150px;
-      margin: 0rem auto 0rem;
-      display: block;
-    }
-    .footketkiri {
-      margin-left: 0rem;
-    }
-    .footketkiri2 {
-      margin-left: 2.5rem;
-    }
-    .footketkiri3 {
-      margin-left: 2.5rem;
-    }
-    .tekskiri {
-      text-align: left;
-      margin-left: 2rem;
-    }
-  }
-  
+}
