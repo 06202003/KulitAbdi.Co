@@ -10,9 +10,6 @@
   width: 12px;
 }
 
-*::-webkit-scrollbar-track {
-  /* background: #b29050; */
-}
 
 *::-webkit-scrollbar-thumb {
   background-color: #6f4628;
@@ -228,10 +225,10 @@ body {
   padding-top: 10%;
 }
 
-svg {
+/* svg {
   width: 20px;
   height: 20px;
-}
+} */
 .tigad {
   width: 225px;
   height: 150px;
