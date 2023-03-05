@@ -10,6 +10,16 @@
   width: 12px;
 }
 
+*::-webkit-scrollbar-track {
+  /* background: #b29050; */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #6f4628;
+  border-radius: 5px;
+  /* border: 3px solid #b29050; */
+}
+
 body {
   /* background-image: url('../img//bg-kulit.png'); */
   background-repeat: no-repeat;
@@ -18,7 +28,9 @@ body {
   background-size: cover;
   /* min-height: 600px; */
 }
-
+.hehehe-boy {
+  font-size: 0.5em;
+}
 /* Button */
 .cta {
   display: flex;
@@ -405,6 +417,10 @@ svg {
   }
   .judulproduk {
     margin-top: 1rem;
+  }
+  .hehehe-boy {
+    font-size: 0.4em;
+    margin-top: 1.5em;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {

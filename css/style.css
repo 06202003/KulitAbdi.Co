@@ -10,6 +10,15 @@
   width: 12px;
 }
 
+*::-webkit-scrollbar-track {
+  /* background: #b29050; */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #6f4628;
+  border-radius: 5px;
+  /* border: 3px solid #b29050; */
+}
 body {
   /* background-image: url('../img//bg-kulit.png'); */
   background-repeat: no-repeat;
@@ -18,7 +27,12 @@ body {
   background-size: cover;
   /* min-height: 600px; */
 }
-
+.logo-asal {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+}
 .gambar-jelajah {
   width: 100%;
   height: 300px;
@@ -451,8 +465,41 @@ svg {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+.hehehe-boy {
+  font-size: 0.5em;
+}
+.jud {
+  font-size: 2.5em;
+}
+.sub-jud {
+  font-size: 1.5em;
+}
+.tengah {
+  text-align: center;
+}
+.ditengah {
+  text-align: left;
+}
 /* foot */
 @media only screen and (min-width: 319px) and (max-width: 767px) {
+  .ditengah {
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .gambar-jelajah {
+    width: 100%;
+    height: 250px;
+  }
+  .jud {
+    font-size: 1em;
+  }
+  .sub-jud {
+    font-size: 1em;
+  }
+  .hehehe-boy {
+    font-size: 0.4em;
+    margin-top: 1.5em;
+  }
   .logo {
     width: 100%;
     height: auto;

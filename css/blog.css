@@ -28,7 +28,9 @@ body {
   background-size: cover;
   /* min-height: 600px; */
 }
-
+.hehehe-boy {
+  font-size: 0.5em;
+}
 /* Button */
 .cta {
   display: flex;
@@ -396,6 +398,10 @@ body {
   .tekskiri {
     text-align: left;
     margin-left: 2rem;
+  }
+  .hehehe-boy {
+    font-size: 0.4em;
+    margin-top: 1.5em;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
