@@ -10,7 +10,6 @@
   width: 12px;
 }
 
-
 *::-webkit-scrollbar-thumb {
   background-color: #6f4628;
   border-radius: 5px;
@@ -472,13 +471,16 @@ body {
   font-size: 1.5em;
 }
 .tengah {
-  text-align: center;
+  text-align: left;
 }
 .ditengah {
   text-align: left;
 }
 /* foot */
 @media only screen and (min-width: 319px) and (max-width: 767px) {
+  .tengah {
+    text-align: center;
+  }
   .ditengah {
     text-align: center;
     padding-top: 2rem;
