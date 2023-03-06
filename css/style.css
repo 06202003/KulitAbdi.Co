@@ -344,7 +344,6 @@ body {
   padding-bottom: 3rem;
   background-color: whitesmoke;
 }
-
 .gambarlogo {
   height: auto;
   width: 100%;
@@ -459,6 +458,7 @@ body {
   border-color: white !important;
 }
 .navbar-toggler-icon {
+  padding-top: 1em;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .hehehe-boy {
@@ -480,6 +480,17 @@ body {
 @media only screen and (min-width: 319px) and (max-width: 767px) {
   .tengah {
     text-align: center;
+  }
+
+  .BtnAnm {
+    font-size: 10px;
+    background: transparent;
+    border: none;
+    padding: 1 em 1.5em;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
   }
   .ditengah {
     text-align: center;
