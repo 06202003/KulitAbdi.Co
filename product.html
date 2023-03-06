@@ -1,32 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>KulitAbdi.Co</title>
-        <!-- Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet" />
-        <!-- BS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/product.css" />
-        <!-- Icon -->
-        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-        <!-- FontAwesome -->
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
-        />
-        <!-- AOS -->
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      </head>
-      <body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KulitAbdi.Co</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet" />
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/product.css" />
+    <!-- Icon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
   <body>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border border-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form class="form_container">
+            <div class="logo_container">
+              <img src="img/brunch.png" class="masuklogo" alt="" />
+            </div>
+            <div class="title_container">
+              <p class="titlejud">Masuk ke akun Anda</p>
+              <span class="subtitlejud">Mulailah dengan aplikasi kami, cukup buat akun dan nikmati pengalamannya.</span>
+            </div>
+            <div class="input_container">
+              <label class="input_label" for="email_field">Email</label>
+              <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="iconic">
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M7 8.5L9.94202 10.2394C11.6572 11.2535 12.3428 11.2535 14.058 10.2394L17 8.5"></path>
+                <path
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  stroke="#141B34"
+                  d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z"
+                ></path>
+              </svg>
+              <input placeholder="name@mail.com" title="Inpit title" name="input-name" type="text" class="input_field" id="email_field" />
+            </div>
+            <div class="input_container">
+              <label class="input_label" for="password_field">Kata Sandi</label>
+              <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="iconic">
+                <path
+                  stroke-linecap="round"
+                  stroke-width="1.5"
+                  stroke="#141B34"
+                  d="M18 11.0041C17.4166 9.91704 16.273 9.15775 14.9519 9.0993C13.477 9.03404 11.9788 9 10.329 9C8.67911 9 7.18091 9.03404 5.70604 9.0993C3.95328 9.17685 2.51295 10.4881 2.27882 12.1618C2.12602 13.2541 2 14.3734 2 15.5134C2 16.6534 2.12602 17.7727 2.27882 18.865C2.51295 20.5387 3.95328 21.8499 5.70604 21.9275C6.42013 21.9591 7.26041 21.9834 8 22"
+                ></path>
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M6 9V6.5C6 4.01472 8.01472 2 10.5 2C12.9853 2 15 4.01472 15 6.5V9"></path>
+                <path
+                  fill="#141B34"
+                  d="M21.2046 15.1045L20.6242 15.6956V15.6956L21.2046 15.1045ZM21.4196 16.4767C21.7461 16.7972 22.2706 16.7924 22.5911 16.466C22.9116 16.1395 22.9068 15.615 22.5804 15.2945L21.4196 16.4767ZM18.0228 15.1045L17.4424 14.5134V14.5134L18.0228 15.1045ZM18.2379 18.0387C18.5643 18.3593 19.0888 18.3545 19.4094 18.028C19.7299 17.7016 19.7251 17.1771 19.3987 16.8565L18.2379 18.0387ZM14.2603 20.7619C13.7039 21.3082 12.7957 21.3082 12.2394 20.7619L11.0786 21.9441C12.2794 23.1232 14.2202 23.1232 15.4211 21.9441L14.2603 20.7619ZM12.2394 20.7619C11.6914 20.2239 11.6914 19.358 12.2394 18.82L11.0786 17.6378C9.86927 18.8252 9.86927 20.7567 11.0786 21.9441L12.2394 20.7619ZM12.2394 18.82C12.7957 18.2737 13.7039 18.2737 14.2603 18.82L15.4211 17.6378C14.2202 16.4587 12.2794 16.4587 11.0786 17.6378L12.2394 18.82ZM14.2603 18.82C14.8082 19.358 14.8082 20.2239 14.2603 20.7619L15.4211 21.9441C16.6304 20.7567 16.6304 18.8252 15.4211 17.6378L14.2603 18.82ZM20.6242 15.6956L21.4196 16.4767L22.5804 15.2945L21.785 14.5134L20.6242 15.6956ZM15.4211 18.82L17.8078 16.4767L16.647 15.2944L14.2603 17.6377L15.4211 18.82ZM17.8078 16.4767L18.6032 15.6956L17.4424 14.5134L16.647 15.2945L17.8078 16.4767ZM16.647 16.4767L18.2379 18.0387L19.3987 16.8565L17.8078 15.2945L16.647 16.4767ZM21.785 14.5134C21.4266 14.1616 21.0998 13.8383 20.7993 13.6131C20.4791 13.3732 20.096 13.1716 19.6137 13.1716V14.8284C19.6145 14.8284 19.619 14.8273 19.6395 14.8357C19.6663 14.8466 19.7183 14.8735 19.806 14.9391C19.9969 15.0822 20.2326 15.3112 20.6242 15.6956L21.785 14.5134ZM18.6032 15.6956C18.9948 15.3112 19.2305 15.0822 19.4215 14.9391C19.5091 14.8735 19.5611 14.8466 19.5879 14.8357C19.6084 14.8273 19.6129 14.8284 19.6137 14.8284V13.1716C19.1314 13.1716 18.7483 13.3732 18.4281 13.6131C18.1276 13.8383 17.8008 14.1616 17.4424 14.5134L18.6032 15.6956Z"
+                ></path>
+              </svg>
+              <input placeholder="Kata Sandi" title="Inpit title" name="input-name" type="password" class="input_field" id="password_field" />
+            </div>
+            <button title="Sign In" type="submit" class="sign-in_btn">
+              <span>Masuk</span>
+            </button>
+
+            <div class="separator">
+              <hr class="line" />
+              <span>Or</span>
+              <hr class="line" />
+            </div>
+            <button title="Sign In" type="submit" class="sign-in_ggl">
+              <i class="fa-brands fa-google"></i>
+              <span>Sign In with Google</span>
+            </button>
+            <button title="Sign In" type="submit" class="sign-in_apl">
+              <svg preserveAspectRatio="xMidYMid" version="1.1" viewBox="0 0 256 315" height="20px" width="16px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path
+                    fill="#ffffff"
+                    d="M213.803394,167.030943 C214.2452,214.609646 255.542482,230.442639 256,230.644727 C255.650812,231.761357 249.401383,253.208293 234.24263,275.361446 C221.138555,294.513969 207.538253,313.596333 186.113759,313.991545 C165.062051,314.379442 158.292752,301.507828 134.22469,301.507828 C110.163898,301.507828 102.642899,313.596301 82.7151126,314.379442 C62.0350407,315.16201 46.2873831,293.668525 33.0744079,274.586162 C6.07529317,235.552544 -14.5576169,164.286328 13.147166,116.18047 C26.9103111,92.2909053 51.5060917,77.1630356 78.2026125,76.7751096 C98.5099145,76.3877456 117.677594,90.4371851 130.091705,90.4371851 C142.497945,90.4371851 165.790755,73.5415029 190.277627,76.0228474 C200.528668,76.4495055 229.303509,80.1636878 247.780625,107.209389 C246.291825,108.132333 213.44635,127.253405 213.803394,167.030988 M174.239142,50.1987033 C185.218331,36.9088319 192.607958,18.4081019 190.591988,0 C174.766312,0.636050225 155.629514,10.5457909 144.278109,23.8283506 C134.10507,35.5906758 125.195775,54.4170275 127.599657,72.4607932 C145.239231,73.8255433 163.259413,63.4970262 174.239142,50.1987249"
+                  ></path>
+                </g>
+              </svg>
+              <span>Sign In with Apple</span>
+            </button>
+            <p class="note">Terms of use &amp; Conditions</p>
+          </form>
+        </div>
+      </div>
+    </div>
     <nav class="navbar nav sticky-top" style="background-color: white">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +108,9 @@
           </svg>
         </button>
         <div class="order-0">
-          <h1><a class="navbar-brand hehehe-boy" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">Menu</a></h1>
+          <h1>
+            <a class="navbar-brand hehehe-boy" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">Menu</a>
+          </h1>
         </div>
         <div class="mx-auto order-0">
           <h1><a class="navbar-brand mx-auto fw-bold hehehe-boy" href="index.html">K u l i t A b d i . c o</a></h1>
@@ -43,7 +118,7 @@
         <div class="">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <button class="BtnAnm hehehe-boy">Sign in</button>
+              <button type="button" class="btn btn-primary BtnAnm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign in</button>
             </li>
           </ul>
         </div>
@@ -69,255 +144,469 @@
     </nav>
     <!-- Navbar -->
     <section>
-        <div class="container" style="margin-top: -3.5rem;">
-            <div class="row d-flex justify-content-center align-self-center margprod">
-              <div class="text-center mb-3 ">
-                <h1 class="judulproduk" data-aos="fade-down" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" data-aos-mirror="true">Produk Kami</h1>
-                <h5 style="color: gray;" data-aos="fade-down" data-aos-offset="100" data-aos-delay="100" data-aos-duration="1000" data-aos-mirror="true">Kami menyediakan berbagai busana berbahan kulit yang modis dan nyaman dikenakan</h5>
+      <div class="container" style="margin-top: -3.5rem">
+        <div class="row d-flex justify-content-center align-self-center margprod">
+          <div class="text-center mb-3">
+            <h1 class="judulproduk" data-aos="fade-down" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" data-aos-mirror="true">Produk Kami</h1>
+            <h5 style="color: gray" data-aos="fade-down" data-aos-offset="100" data-aos-delay="100" data-aos-duration="1000" data-aos-mirror="true">Kami menyediakan berbagai busana berbahan kulit yang modis dan nyaman dikenakan</h5>
+          </div>
+          <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="250" data-aos-duration="1000" data-aos-mirror="true">
+            <div class="card">
+              <div class="card-img">
+                <div class="sketchfab-embed-wrapper">
+                  <iframe
+                    title="Leather shoes"
+                    frameborder="0"
+                    allowfullscreen
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    xr-spatial-tracking
+                    execution-while-out-of-viewport
+                    execution-while-not-rendered
+                    web-share
+                    class="tigad"
+                    src="https://sketchfab.com/models/c2a5343bf18949fc8d6815034ec7f87d/embed?autostart=1&camera=0&ui_theme=dark"
+                  >
+                  </iframe>
+                </div>
               </div>
-                <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="250" data-aos-duration="1000" data-aos-mirror="true">
-                    <div class="card">
-                        <div class="card-img">
-                            <div class="sketchfab-embed-wrapper"> <iframe title="Leather shoes" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share class="tigad" src="https://sketchfab.com/models/c2a5343bf18949fc8d6815034ec7f87d/embed?autostart=1&camera=0&ui_theme=dark"> </iframe> </div>                        </div>
-                        <div class="card-info text-center">
-                          <p class="text-title">DMS The Brown </p>
-                          <p class="text-body">Sepatu pria yang awet dan modis. Berbahan dasar kulit dengan karet anti slip</p>
-                          <h5>SIZE</h5>
-                          <div class="row d-flex justify-content-center  mx-1">
-                            <div class="btn-group">
-                              <button type="button" class="btn btn-outline-primary ukuran btn-sm">39</button>
-                              <button type="button" class="btn btn-outline-primary ukuran btn-sm">40</button>
-                              <button type="button" class="btn btn-outline-primary ukuran btn-sm">41</button>
-                              <button type="button" class="btn btn-outline-primary ukuran btn-sm">42</button>
-                              <button type="button" class="btn btn-outline-primary ukuran btn-sm">43</button>
-                              <button type="button" class="btn btn-outline-primary ukuran btn-sm">44</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-footer">
-                        <span class="text-title">Rp 395.000</span>
-                        <div class="card-button">
-                          <svg class="svg-icon" viewBox="0 0 20 20">
-                            <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-                            <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-                            <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-                          </svg>
-                        </div>
-                      </div></div>
+              <div class="card-info text-center">
+                <p class="text-title">DMS The Brown</p>
+                <p class="text-body">Sepatu pria yang awet dan modis. Berbahan dasar kulit dengan karet anti slip</p>
+                <h5>SIZE</h5>
+                <div class="row d-flex justify-content-center mx-1">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">39</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">40</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">41</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">42</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">43</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">44</button>
+                  </div>
                 </div>
-                <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="350" data-aos-duration="1000" data-aos-mirror="true">
-                    <div class="card">
-                        <div class="card-img">
-                            <div class="sketchfab-embed-wrapper"> <iframe title="Black boots" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share class="tigad" src="https://sketchfab.com/models/fcca2bfba5be404c996b3fccdcb7dee8/embed?autostart=1&camera=0&ui_theme=dark"> </iframe> </div>                     </div>
-                            <div class="card-info text-center">
-                              <p class="text-title">DMS The Black </p>
-                              <p class="text-body">Sepatu wanita yang awet dan modis. Berbahan dasar kulit dengan karet anti slip</p>
-                              <h5>SIZE</h5>
-                              <div class="row d-flex justify-content-center  mx-1">
-                                <div class="btn-group">
-
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">37</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">38</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">39</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">40</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">41</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">42</button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-footer">
-                            <span class="text-title">Rp 365.000</span>
-                            <div class="card-button">
-                              <svg class="svg-icon" viewBox="0 0 20 20">
-                                <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-                                <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-                                <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-                              </svg>
-                            </div>
-                          </div></div>
+              </div>
+              <div class="card-footer">
+                <span class="text-title">Rp 395.000</span>
+                <div class="card-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path
+                      d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                    ></path>
+                    <path
+                      d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    ></path>
+                    <path
+                      d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                    ></path>
+                  </svg>
                 </div>
-                <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="450" data-aos-duration="1000" data-aos-mirror="true">
-                    <div class="card">
-                        <div class="card-img">
-                            <div class="sketchfab-embed-wrapper"> <iframe title="Leather Belt (Miniature Circus)" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share class="tigad" src="https://sketchfab.com/models/bfab705d59544ac8a088363e9a3bad09/embed?autostart=1&camera=0&ui_theme=dark"> </iframe> </div>
-                          </div>
-                            <div class="card-info text-center">
-                              <p class="text-title">Sabuk Kulit Pria </p>
-                              <p class="text-body">Ikat Pinggang Pria kulit yang tebal, kuat, sangat lentur, dan nyaman dipakai sehari-hari.</p>
-                              <h5>SIZE</h5>
-                              <div class="row d-flex justify-content-center  mx-1">
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">90cm</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">110cm</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">130cm</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">150cm</button>
-
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-footer">
-                            <span class="text-title">Rp 127.900</span>
-                            <div class="card-button">
-                              <svg class="svg-icon" viewBox="0 0 20 20">
-                                <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-                                <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-                                <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-                              </svg>
-                            </div>
-                          </div></div>
-                </div>
-                <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" data-aos-mirror="true">
-                    <div class="card">
-                        <div class="card-img">
-                            <div class="sketchfab-embed-wrapper"> <iframe title="Belt" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share class="tigad" src="https://sketchfab.com/models/14c017540bd64fda812557411a24b0d9/embed?autostart=1&camera=0&ui_theme=dark"> </iframe> </div>      </div>
-                            <div class="card-info text-center">
-                              <p class="text-title">Sabuk Kulit Wanita </p>
-                              <p class="text-body">Ikat Pinggang Wanita kulit yang tebal, kuat, sangat lentur, dan nyaman dipakai sehari-hari.</p>
-                              <h5>SIZE</h5>
-                              <div class="row d-flex justify-content-center  mx-1">
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">70cm</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">90cm</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">110cm</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">130cm</button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-footer">
-                            <span class="text-title">Rp 96.500</span>
-                            <div class="card-button">
-                              <svg class="svg-icon" viewBox="0 0 20 20">
-                                <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-                                <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-                                <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-                              </svg>
-                            </div>
-                          </div></div>
-                </div>
-                <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="150" data-aos-duration="1000" data-aos-mirror="true">
-                    <div class="card">
-                        <div class="card-img">
-                            <div class="sketchfab-embed-wrapper"> <iframe title="Leather Pants (Free)" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share class="tigad" src="https://sketchfab.com/models/f3d8e925db784591ad54ce18a27e540d/embed?autostart=1&camera=0&ui_theme=dark"> </iframe> </div> </div>
-                            <div class="card-info text-center">
-                              <p class="text-title">Celana Kulit Pria </p>
-                              <p class="text-body">Celana berbahan kulit kualitas terbaik, elastis, serta terkesan mewah dan keren saat digunakan.</p>
-                              <h5>SIZE</h5>
-                              <div class="row d-flex justify-content-center  mx-1">
-                                <div class="btn-group">
-
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">34</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">36</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">38</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">40</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">42</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">44</button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-footer">
-                            <span class="text-title">Rp 293.500</span>
-                            <div class="card-button">
-                              <svg class="svg-icon" viewBox="0 0 20 20">
-                                <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-                                <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-                                <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-                              </svg>
-                            </div>
-                          </div></div>
-                </div>
-                <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="250" data-aos-duration="1000" data-aos-mirror="true">
-                    <div class="card">
-                        <div class="card-img">
-                            <div class="sketchfab-embed-wrapper"> <iframe title="Crow inspired leather pants" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share class="tigad" src="https://sketchfab.com/models/a739f9a81d4743d1bf8ffaf94bae2c4c/embed?autostart=1&camera=0&ui_theme=dark"> </iframe> </div>              </div>
-                            <div class="card-info text-center">
-                              <p class="text-title">Celana Kulit Wanita </p>
-                              <p class="text-body">Celana berbahan kulit kualitas terbaik, elastis, serta terkesan mewah dan keren saat digunakan.</p>
-                              <h5>SIZE</h5>
-                              <div class="row d-flex justify-content-center  mx-1">
-                                <div class="btn-group">
-
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">30</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">32</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">34</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">36</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">38</button>
-                                  <button type="button" class="btn btn-outline-primary ukuran btn-sm">40</button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-footer">
-                            <span class="text-title">Rp 243.250</span>
-                            <div class="card-button">
-                              <svg class="svg-icon" viewBox="0 0 20 20">
-                                <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-                                <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-                                <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-                              </svg>
-                            </div>
-                          </div></div>
-                </div>
-                <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" data-aos-mirror="true">
-                    <div class="card">
-                        <div class="card-img">
-                            <div class="sketchfab-embed-wrapper"> <iframe title="Leather bag" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share class="tigad" src="https://sketchfab.com/models/be35ef7916324da0950f1ebfadb2aecf/embed?autostart=1&camera=0&ui_infos=0&ui_theme=dark"> </iframe> </div>                 </div>
-                            <div class="card-info text-center">
-                              <p class="text-title">Tas Modis Wanita </p>
-                              <p class="text-body kecilbawah">Bergaya simple namun elegan sehingga tetap menarik walaupun dipadukan dengan gaya apapun. Memiliki kapasitas yang besar sehingga mampu memuat banyak barang sehingga jadi lebih praktis dan aman.</p>
-
-                            </div>
-                            <div class="card-footer">
-                            <span class="text-title">Rp 166.500</span>
-                            <div class="card-button">
-                              <svg class="svg-icon" viewBox="0 0 20 20">
-                                <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-                                <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-                                <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-                              </svg>
-                            </div>
-                          </div></div>
-                </div>
-                <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="150" data-aos-duration="1000" data-aos-mirror="true">
-                    <div class="card">
-                        <div class="card-img">
-                            <div class="sketchfab-embed-wrapper"> <iframe title="Leather Bag" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share class="tigad" src="https://sketchfab.com/models/b2502208afcc4eaaa65a254067afe38d/embed?autostart=1&camera=0&ui_theme=dark"> </iframe> </div>          </div>
-                            <div class="card-info text-center">
-                              <p class="text-title">Tas Postman Pria </p>
-                              <p class="text-body kecilbawah">Tas selempang yang elegant untuk Anda para eksekutif muda atau para pria yang bekerja di kantoran, tas ini menjadi pilihan terbaik karena modelnya yang sangat manly. Bahan dan warna tas memberikan kesan mapan dan berkelas.</p>
-
-                            </div>
-                            <div class="card-footer">
-                            <span class="text-title">Rp 201.250</span>
-                            <div class="card-button">
-                              <svg class="svg-icon" viewBox="0 0 20 20">
-                                <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-                                <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-                                <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-                              </svg>
-                            </div>
-                          </div></div>
-                </div>
-                <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="250" data-aos-duration="1000" data-aos-mirror="true">
-                    <div class="card">
-                        <div class="card-img">
-                            <div class="sketchfab-embed-wrapper"> <iframe title="Black Leather Glove" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share class="tigad" src="https://sketchfab.com/models/c954a6160ee34548a1b0ea538f3b92dd/embed?autostart=1&camera=0&ui_theme=dark"> </iframe> </div>   </div>
-                            <div class="card-info text-center">
-                              <p class="text-title">Sarung Tangan Motor </p>
-                              <p class="text-body kecilbawah">Sarung tangan menutupi seluruh bagian jari, tidak panas, dan kualitas jahitan bagus. Bahan dilengkapi dengan kain anti slip untuk menambah kenyamanan saat berkendara harian ataupun saat touring.</p>
-
-                            </div>
-                            <div class="card-footer">
-                            <span class="text-title">Rp 53.250</span>
-                            <div class="card-button">
-                              <svg class="svg-icon" viewBox="0 0 20 20">
-                                <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-                                <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-                                <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-                              </svg>
-                            </div>
-                          </div></div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="350" data-aos-duration="1000" data-aos-mirror="true">
+            <div class="card">
+              <div class="card-img">
+                <div class="sketchfab-embed-wrapper">
+                  <iframe
+                    title="Black boots"
+                    frameborder="0"
+                    allowfullscreen
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    xr-spatial-tracking
+                    execution-while-out-of-viewport
+                    execution-while-not-rendered
+                    web-share
+                    class="tigad"
+                    src="https://sketchfab.com/models/fcca2bfba5be404c996b3fccdcb7dee8/embed?autostart=1&camera=0&ui_theme=dark"
+                  >
+                  </iframe>
+                </div>
+              </div>
+              <div class="card-info text-center">
+                <p class="text-title">DMS The Black</p>
+                <p class="text-body">Sepatu wanita yang awet dan modis. Berbahan dasar kulit dengan karet anti slip</p>
+                <h5>SIZE</h5>
+                <div class="row d-flex justify-content-center mx-1">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">37</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">38</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">39</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">40</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">41</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">42</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span class="text-title">Rp 365.000</span>
+                <div class="card-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path
+                      d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                    ></path>
+                    <path
+                      d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    ></path>
+                    <path
+                      d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="450" data-aos-duration="1000" data-aos-mirror="true">
+            <div class="card">
+              <div class="card-img">
+                <div class="sketchfab-embed-wrapper">
+                  <iframe
+                    title="Leather Belt (Miniature Circus)"
+                    frameborder="0"
+                    allowfullscreen
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    xr-spatial-tracking
+                    execution-while-out-of-viewport
+                    execution-while-not-rendered
+                    web-share
+                    class="tigad"
+                    src="https://sketchfab.com/models/bfab705d59544ac8a088363e9a3bad09/embed?autostart=1&camera=0&ui_theme=dark"
+                  >
+                  </iframe>
+                </div>
+              </div>
+              <div class="card-info text-center">
+                <p class="text-title">Sabuk Kulit Pria</p>
+                <p class="text-body">Ikat Pinggang Pria kulit yang tebal, kuat, sangat lentur, dan nyaman dipakai sehari-hari.</p>
+                <h5>SIZE</h5>
+                <div class="row d-flex justify-content-center mx-1">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">90cm</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">110cm</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">130cm</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">150cm</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span class="text-title">Rp 127.900</span>
+                <div class="card-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path
+                      d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                    ></path>
+                    <path
+                      d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    ></path>
+                    <path
+                      d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" data-aos-mirror="true">
+            <div class="card">
+              <div class="card-img">
+                <div class="sketchfab-embed-wrapper">
+                  <iframe
+                    title="Belt"
+                    frameborder="0"
+                    allowfullscreen
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    xr-spatial-tracking
+                    execution-while-out-of-viewport
+                    execution-while-not-rendered
+                    web-share
+                    class="tigad"
+                    src="https://sketchfab.com/models/14c017540bd64fda812557411a24b0d9/embed?autostart=1&camera=0&ui_theme=dark"
+                  >
+                  </iframe>
+                </div>
+              </div>
+              <div class="card-info text-center">
+                <p class="text-title">Sabuk Kulit Wanita</p>
+                <p class="text-body">Ikat Pinggang Wanita kulit yang tebal, kuat, sangat lentur, dan nyaman dipakai sehari-hari.</p>
+                <h5>SIZE</h5>
+                <div class="row d-flex justify-content-center mx-1">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">70cm</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">90cm</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">110cm</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">130cm</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span class="text-title">Rp 96.500</span>
+                <div class="card-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path
+                      d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                    ></path>
+                    <path
+                      d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    ></path>
+                    <path
+                      d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="150" data-aos-duration="1000" data-aos-mirror="true">
+            <div class="card">
+              <div class="card-img">
+                <div class="sketchfab-embed-wrapper">
+                  <iframe
+                    title="Leather Pants (Free)"
+                    frameborder="0"
+                    allowfullscreen
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    xr-spatial-tracking
+                    execution-while-out-of-viewport
+                    execution-while-not-rendered
+                    web-share
+                    class="tigad"
+                    src="https://sketchfab.com/models/f3d8e925db784591ad54ce18a27e540d/embed?autostart=1&camera=0&ui_theme=dark"
+                  >
+                  </iframe>
+                </div>
+              </div>
+              <div class="card-info text-center">
+                <p class="text-title">Celana Kulit Pria</p>
+                <p class="text-body">Celana berbahan kulit kualitas terbaik, elastis, serta terkesan mewah dan keren saat digunakan.</p>
+                <h5>SIZE</h5>
+                <div class="row d-flex justify-content-center mx-1">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">34</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">36</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">38</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">40</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">42</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">44</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span class="text-title">Rp 293.500</span>
+                <div class="card-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path
+                      d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                    ></path>
+                    <path
+                      d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    ></path>
+                    <path
+                      d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="250" data-aos-duration="1000" data-aos-mirror="true">
+            <div class="card">
+              <div class="card-img">
+                <div class="sketchfab-embed-wrapper">
+                  <iframe
+                    title="Crow inspired leather pants"
+                    frameborder="0"
+                    allowfullscreen
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    xr-spatial-tracking
+                    execution-while-out-of-viewport
+                    execution-while-not-rendered
+                    web-share
+                    class="tigad"
+                    src="https://sketchfab.com/models/a739f9a81d4743d1bf8ffaf94bae2c4c/embed?autostart=1&camera=0&ui_theme=dark"
+                  >
+                  </iframe>
+                </div>
+              </div>
+              <div class="card-info text-center">
+                <p class="text-title">Celana Kulit Wanita</p>
+                <p class="text-body">Celana berbahan kulit kualitas terbaik, elastis, serta terkesan mewah dan keren saat digunakan.</p>
+                <h5>SIZE</h5>
+                <div class="row d-flex justify-content-center mx-1">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">30</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">32</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">34</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">36</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">38</button>
+                    <button type="button" class="btn btn-outline-primary ukuran btn-sm">40</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span class="text-title">Rp 243.250</span>
+                <div class="card-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path
+                      d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                    ></path>
+                    <path
+                      d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    ></path>
+                    <path
+                      d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" data-aos-mirror="true">
+            <div class="card">
+              <div class="card-img">
+                <div class="sketchfab-embed-wrapper">
+                  <iframe
+                    title="Leather bag"
+                    frameborder="0"
+                    allowfullscreen
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    xr-spatial-tracking
+                    execution-while-out-of-viewport
+                    execution-while-not-rendered
+                    web-share
+                    class="tigad"
+                    src="https://sketchfab.com/models/be35ef7916324da0950f1ebfadb2aecf/embed?autostart=1&camera=0&ui_infos=0&ui_theme=dark"
+                  >
+                  </iframe>
+                </div>
+              </div>
+              <div class="card-info text-center">
+                <p class="text-title">Tas Modis Wanita</p>
+                <p class="text-body kecilbawah">
+                  Bergaya simple namun elegan sehingga tetap menarik walaupun dipadukan dengan gaya apapun. Memiliki kapasitas yang besar sehingga mampu memuat banyak barang sehingga jadi lebih praktis dan aman.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span class="text-title">Rp 166.500</span>
+                <div class="card-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path
+                      d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                    ></path>
+                    <path
+                      d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    ></path>
+                    <path
+                      d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="150" data-aos-duration="1000" data-aos-mirror="true">
+            <div class="card">
+              <div class="card-img">
+                <div class="sketchfab-embed-wrapper">
+                  <iframe
+                    title="Leather Bag"
+                    frameborder="0"
+                    allowfullscreen
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    xr-spatial-tracking
+                    execution-while-out-of-viewport
+                    execution-while-not-rendered
+                    web-share
+                    class="tigad"
+                    src="https://sketchfab.com/models/b2502208afcc4eaaa65a254067afe38d/embed?autostart=1&camera=0&ui_theme=dark"
+                  >
+                  </iframe>
+                </div>
+              </div>
+              <div class="card-info text-center">
+                <p class="text-title">Tas Postman Pria</p>
+                <p class="text-body kecilbawah">
+                  Tas selempang yang elegant untuk Anda para eksekutif muda atau para pria yang bekerja di kantoran, tas ini menjadi pilihan terbaik karena modelnya yang sangat manly. Bahan dan warna tas memberikan kesan mapan dan berkelas.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span class="text-title">Rp 201.250</span>
+                <div class="card-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path
+                      d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                    ></path>
+                    <path
+                      d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    ></path>
+                    <path
+                      d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="250" data-aos-duration="1000" data-aos-mirror="true">
+            <div class="card">
+              <div class="card-img">
+                <div class="sketchfab-embed-wrapper">
+                  <iframe
+                    title="Black Leather Glove"
+                    frameborder="0"
+                    allowfullscreen
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    xr-spatial-tracking
+                    execution-while-out-of-viewport
+                    execution-while-not-rendered
+                    web-share
+                    class="tigad"
+                    src="https://sketchfab.com/models/c954a6160ee34548a1b0ea538f3b92dd/embed?autostart=1&camera=0&ui_theme=dark"
+                  >
+                  </iframe>
+                </div>
+              </div>
+              <div class="card-info text-center">
+                <p class="text-title">Sarung Tangan Motor</p>
+                <p class="text-body kecilbawah">
+                  Sarung tangan menutupi seluruh bagian jari, tidak panas, dan kualitas jahitan bagus. Bahan dilengkapi dengan kain anti slip untuk menambah kenyamanan saat berkendara harian ataupun saat touring.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span class="text-title">Rp 53.250</span>
+                <div class="card-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path
+                      d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                    ></path>
+                    <path
+                      d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    ></path>
+                    <path
+                      d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-white text-muted">
