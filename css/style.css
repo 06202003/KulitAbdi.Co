@@ -332,6 +332,10 @@ body {
 .text-body {
   font-size: 0.75em;
 }
+.bgnav {
+  /* background-color: rgb(97, 51, 18, 0.9); */
+  background-color: whitesmoke;
+}
 .text-promo {
   font-size: 1em;
 }
