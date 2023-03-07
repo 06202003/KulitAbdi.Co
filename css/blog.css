@@ -53,6 +53,10 @@ body {
   margin-top: 50px;
 }
 
+.AHover:hover{
+  border: #6f4628;
+}
+
 .cta:focus {
   outline: none;
 }
