@@ -593,7 +593,8 @@ body {
 /* foot */
 
 .btn-warning {
-  background-color: #b29050 !important;
+  background-color: #56492f !important;
+  color: white;
 }
 .logo {
   margin-left: 3rem;
