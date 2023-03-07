@@ -149,7 +149,10 @@ body {
   background: linear-gradient(0deg, rgba(209, 170, 152, 0.8996848739495799) 0%, rgba(255, 255, 255, 1) 100%);
   height: 200px;
 }
-
+.waduh {
+  margin-bottom: 0rem;
+  margin: auto;
+}
 .BtnAnm::before {
   content: '';
   position: absolute;
@@ -418,7 +421,9 @@ body {
 .spctxt {
   line-height: 2rem;
 }
-
+.wave-top {
+  margin-top: -6rem;
+}
 /* Testimoni */
 .client {
   width: 100%;
@@ -746,6 +751,12 @@ body {
   }
   .tengaheuy {
     text-align: center;
+  }
+  .wave-top {
+    margin-top: 0rem;
+  }
+  .waduh {
+    margin-bottom: 4rem;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {

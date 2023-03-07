@@ -611,6 +611,16 @@ body {
     font-size: 0.4em;
     margin-top: 1.5em;
   }
+  .BtnAnm {
+    font-size: 10px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+  }
   .logo {
     width: 100%;
     height: auto;
@@ -629,9 +639,6 @@ body {
   }
   .judulkecil {
     font-size: 0.7em;
-  }
-  .bgHero {
-    margin-top: 5rem;
   }
   .navigasi {
     padding-left: 0rem;

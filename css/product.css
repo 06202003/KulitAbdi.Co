@@ -520,6 +520,16 @@ svg {
     max-width: 50px;
     max-height: 100px;
   }
+  .BtnAnm {
+    font-size: 10px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+  }
   .logo {
     margin-left: 0rem;
     margin-right: 0rem;

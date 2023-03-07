@@ -53,10 +53,6 @@ body {
   margin-top: 50px;
 }
 
-.AHover:hover{
-  border: #6f4628;
-}
-
 .cta:focus {
   outline: none;
 }
@@ -166,6 +162,9 @@ body {
 
 .BtnAnm:hover::before {
   width: 100%;
+}
+.AHover:hover {
+  border: #6f4628;
 }
 
 .BtnAnm::after {
@@ -517,11 +516,12 @@ body {
 }
 /* foot */
 .berita {
-  width: 300px;
+  width: 100%;
   height: 400px;
   background: white;
   padding: 0.4em;
   border-radius: 8px;
+  margin: 0;
 }
 
 .berita-image {
@@ -578,6 +578,42 @@ body {
     height: auto;
     max-width: 50px;
     max-height: 100px;
+  }
+  .berita {
+    width: 100%;
+    height: 450px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  .berita-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 50%;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 1em;
+  }
+  .foto12 {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    max-height: 300px;
+    margin-bottom: 2rem;
+  }
+
+  .berita-image:hover {
+    transform: scale(0.98);
+  }
+
+  .BtnAnm {
+    font-size: 10px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
   }
   .logo {
     margin-left: 0rem;
