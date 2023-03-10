@@ -407,6 +407,37 @@ body {
   border-radius: 10px;
   box-shadow: inset 0 0 0 0 #b29050;
 }
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.aqua-gradient {
+  background: linear-gradient(180deg, rgba(178, 128, 83, 1) 0%, rgba(255, 192, 173, 1) 100%); /* background: linear-gradient(40deg, #2096ff, #05ffa3) !important; */
+}
+
+.testimonial-card .avatar {
+  width: 120px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+.ditengah {
+  color: white;
+}
+.yes123 {
+  color: black;
+}
+.darkmode--activated .testimonial-card {
+  color: white;
+  
+}
+.darkmode--activated .ditengah {
+  color: black;
+}
 
 .btnlog:hover {
   color: white;
