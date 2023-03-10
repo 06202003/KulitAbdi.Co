@@ -36,6 +36,9 @@ body {
 .hehehe-boy {
   font-size: 0.5em;
 }
+.darkmode--activated .harusnyamah {
+  color: white;
+}
 /* Button */
 .cta {
   display: flex;
