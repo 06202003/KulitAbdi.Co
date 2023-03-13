@@ -39,6 +39,7 @@ body {
 .darkmode--activated .harusnyamah {
   color: white;
 }
+
 /* Button */
 .cta {
   display: flex;
@@ -560,7 +561,7 @@ body {
 
 .bg-contact {
   background-color: whitesmoke;
-  height: 100vh;
+  height: auto;
 }
 .textketerangan {
   font-size: 1em;
