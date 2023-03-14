@@ -395,8 +395,8 @@ body {
 }
 
 .margteng {
-  margin-left: 12rem;
-  margin-right: 12rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
 .values {
   text-decoration: none;
@@ -465,6 +465,19 @@ body {
 .bg-foot {
   background-color: gray;
 }
+.judawal {
+  font-size: 5em;
+}
+.kikiki {
+  font-size: 3em;
+  margin-top: 2rem;
+}
+.tulisan {
+  text-align: left;
+}
+.tulisanakhir {
+  font-size: 3em;
+}
 @media only screen and (min-width: 319px) and (max-width: 767px) {
   .logo {
     width: 100%;
@@ -528,6 +541,21 @@ body {
     font-size: 0.4em;
     margin-top: 1.5em;
   }
+  .judawal {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: -1em;
+  }
+  .kikiki {
+    font-size: 2em;
+  }
+  .tulisan {
+    text-align: center;
+  }
+  .tulisanakhir {
+    font-size: 2em;
+  }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .promosigambar {
@@ -578,5 +606,17 @@ body {
   .tekskiri {
     text-align: left;
     margin-left: 2rem;
+  }
+  .judawal {
+    font-size: 4em;
+  }
+  .kikiki {
+    font-size: 2.5em;
+  }
+  .tulisan {
+    text-align: left;
+  }
+  .tulisanakhir {
+    font-size: 2.5em;
   }
 }
