@@ -391,7 +391,7 @@ body {
 }
 /* End Button Login */
 .margprod {
-  margin-top: 7rem;
+  margin-top: 4rem;
 }
 
 .margteng {
@@ -471,12 +471,29 @@ body {
 .kikiki {
   font-size: 3em;
   margin-top: 2rem;
+  text-align: center;
+  padding: 1em;
 }
 .tulisan {
   text-align: left;
 }
 .tulisanakhir {
   font-size: 3em;
+}
+.darkmode--activated .terang {
+  color: white;
+}
+.darkmode--activated .wakawk {
+  color: white;
+}
+.darkmode--activated .tulisan {
+  color: white;
+}
+.darkmode--activated .tulisanakhir {
+  color: white;
+}
+.kikiki {
+  color: white;
 }
 @media only screen and (min-width: 319px) and (max-width: 767px) {
   .logo {
